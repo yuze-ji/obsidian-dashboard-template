@@ -12,48 +12,80 @@
 - 🌍 **多语言支持** - 中文/英文一键切换
 - 🌙 **主题自适应** - 浅色/深色主题自动适配，协调的绿色配色
 
-## 📦 安装方法
+## 🔧 系统要求
 
-### 1. 复制文件
-将 `Homepage.md` 复制到你的Obsidian仓库的 `Dashboard` 文件夹中。
+### 必需
+- ✅ **Obsidian 1.0+**
+- ✅ **Dataview插件** - DataviewJS核心依赖
+- ✅ 互联网连接（用于CDN资源：Chart.js、Google Fonts）
+
+### 可选
+- 📦 Periodic Notes - 自动创建日记
+- 📋 Tasks - 增强型任务管理
+
+---
+
+## 📦 快速安装（5分钟）
+
+### 1️⃣ 安装Dataview插件
+
+1. 打开Obsidian → 设置 ⚙️ → Community plugins
+2. 搜索 `Dataview` → Install → Enable
+3. 在Dataview设置中启用：
+   - ✅ JavaScript Queries
+   - ✅ Inline Queries
+
+### 2️⃣ 复制仪表板文件
+
+将本仓库的文件复制到你的Obsidian：
 
 ```
 你的Obsidian仓库/
 ├── Dashboard/
-│   └── Homepage.md
+│   ├── Homepage.md          ← 主仪表板
+│   ├── Project List.md      ← 项目数据
+│   └── Todo List.md         ← 待办任务
+└── Projects/
+    └── (你的项目文件)
 ```
 
-### 2. 创建必要文件夹结构
-```
-Dashboard/
-├── Homepage.md
-├── Project List.md
-└── Todo List.md
+### 3️⃣ 配置项目数据
 
-Projects/
-├── (项目文件)
-```
-
-### 3. 设置项目数据
-在 `Dashboard/Project List.md` 中添加YAML格式的项目数据：
+在 `Dashboard/Project List.md` 添加你的项目：
 
 ```yaml
 ---
 tags: project-list
 projects:
-  - name: 项目名称
+  - name: 我的项目
     status: active
     priority: high
     progress: 50
 ---
 ```
 
-### 4. 在主页创建链接
-在你的Obsidian主页（或任何地方）创建一个链接指向 `Homepage.md`：
+### 4️⃣ 创建主页链接
+
+在你的Obsidian主页创建链接：
 
 ```markdown
 [[Dashboard/Homepage.md|📊 仪表板]]
 ```
+
+### 5️⃣ 完成！
+
+打开Homepage.md，仪表板应该正常显示 🎉
+
+---
+
+## 📖 详细配置指南
+
+复杂的配置问题？查看 **[SETUP_GUIDE.md](./SETUP_GUIDE.md)** 获取：
+- 完整的Dataview配置步骤
+- 文件夹结构最佳实践
+- localStorage数据存储说明
+- CDN资源信息
+- 常见问题解决
 
 ## 🎮 功能说明
 
