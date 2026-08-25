@@ -1,0 +1,24 @@
+# Obsidian个人数据
+.obsidian/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# 个人笔记（不上传）
+Note/
+Projects/
+！Projects/README.md
+
+# 本地文件
+Dashboard/Project List.md
+Dashboard/Todo List.md
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# 日志
+*.log
+*.tmp
